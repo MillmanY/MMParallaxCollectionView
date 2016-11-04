@@ -5,6 +5,19 @@
 [![License](https://img.shields.io/cocoapods/l/MMParallaxCollectionView.svg?style=flat)](http://cocoapods.org/pods/MMParallaxCollectionView)
 [![Platform](https://img.shields.io/cocoapods/p/MMParallaxCollectionView.svg?style=flat)](http://cocoapods.org/pods/MMParallaxCollectionView)
 
+## Demo
+1.Parallax
+
+![demo](https://github.com/MillmanY/MMParallaxCollectionView/blob/master/DemoSource/Demo.gif)
+
+2.front
+
+![demo](https://github.com/MillmanY/MMParallaxCollectionView/blob/master/DemoSource/front.gif)
+
+3.rear
+
+![demo](https://github.com/MillmanY/MMParallaxCollectionView/blob/master/DemoSource/rear.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
