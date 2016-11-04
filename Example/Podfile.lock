@@ -1,0 +1,16 @@
+PODS:
+  - MMParallaxCollectionView (0.1.0)
+
+DEPENDENCIES:
+  - MMParallaxCollectionView (from `../`)
+
+EXTERNAL SOURCES:
+  MMParallaxCollectionView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MMParallaxCollectionView: 53573e8ca9063f3402ea947832c104076aada455
+
+PODFILE CHECKSUM: c153cfbb00127b021e1c9be83ae9bb8573846d42
+
+COCOAPODS: 1.1.1

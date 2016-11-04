@@ -14,7 +14,6 @@ class TitleCell: UICollectionViewCell {
     
     func setCellWith(title:String,isSelect:Bool) {
         self.labTitle.text = title
-        self.backgroundColor = (isSelect) ? UIColor.blue : UIColor.white
         
     }
     

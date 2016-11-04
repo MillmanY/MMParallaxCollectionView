@@ -8,8 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		25D5430E87101625B5C816AE /* Pods_MMParallaxCollectionView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D53D3421F26834FCE00E68 /* Pods_MMParallaxCollectionView_Example.framework */; };
+		5E050BA91DCC241F0054D7EA /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E050BA81DCC241F0054D7EA /* ParallaxHeader.swift */; };
+		5E050BAB1DCC242B0054D7EA /* ParallaxHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E050BAA1DCC242B0054D7EA /* ParallaxHeader.xib */; };
+		5E3CB2C11DC99A3900D27C61 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CB2BD1DC99A3900D27C61 /* HeaderTitleView.swift */; };
+		5E3CB2C21DC99A3900D27C61 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3CB2BE1DC99A3900D27C61 /* HeaderTitleView.xib */; };
+		5E3CB2C31DC99A3900D27C61 /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3CB2BF1DC99A3900D27C61 /* TitleCell.swift */; };
+		5E3CB2C41DC99A3900D27C61 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E3CB2C01DC99A3900D27C61 /* TitleCell.xib */; };
+		5EB5964A1DCB3F14009D8B9B /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB596481DCB3F14009D8B9B /* ImageCell.swift */; };
+		5EB5964B1DCB3F14009D8B9B /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB596491DCB3F14009D8B9B /* ImageCell.xib */; };
+		5EF957DF1DCC8D99006AE1EF /* RearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF957DE1DCC8D99006AE1EF /* RearViewController.swift */; };
+		5EF957E11DCC8DB5006AE1EF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF957E01DCC8DB5006AE1EF /* BaseViewController.swift */; };
+		5EF957E31DCC926B006AE1EF /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF957E21DCC926B006AE1EF /* FrontViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		607FACD81AFB9204008FA782 /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ParallaxViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -32,10 +43,21 @@
 		1D2067EB5A8B4A331F7CE43A /* MMParallaxCollectionView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MMParallaxCollectionView.podspec; path = ../MMParallaxCollectionView.podspec; sourceTree = "<group>"; };
 		56CD7EE27695439CA82CA7C6 /* Pods-MMParallaxCollectionView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMParallaxCollectionView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMParallaxCollectionView_Tests/Pods-MMParallaxCollectionView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D8F6B9D80C2452E1D999988 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5E050BA81DCC241F0054D7EA /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
+		5E050BAA1DCC242B0054D7EA /* ParallaxHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParallaxHeader.xib; sourceTree = "<group>"; };
+		5E3CB2BD1DC99A3900D27C61 /* HeaderTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
+		5E3CB2BE1DC99A3900D27C61 /* HeaderTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
+		5E3CB2BF1DC99A3900D27C61 /* TitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		5E3CB2C01DC99A3900D27C61 /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		5EB596481DCB3F14009D8B9B /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		5EB596491DCB3F14009D8B9B /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		5EF957DE1DCC8D99006AE1EF /* RearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RearViewController.swift; sourceTree = "<group>"; };
+		5EF957E01DCC8DB5006AE1EF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5EF957E21DCC926B006AE1EF /* FrontViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MMParallaxCollectionView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMParallaxCollectionView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		607FACD71AFB9204008FA782 /* ParallaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -69,6 +91,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E050BA71DCC24090054D7EA /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				5E050BA81DCC241F0054D7EA /* ParallaxHeader.swift */,
+				5E050BAA1DCC242B0054D7EA /* ParallaxHeader.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		5E3CB2BC1DC99A3900D27C61 /* CommonCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E3CB2BD1DC99A3900D27C61 /* HeaderTitleView.swift */,
+				5E3CB2BE1DC99A3900D27C61 /* HeaderTitleView.xib */,
+				5E3CB2BF1DC99A3900D27C61 /* TitleCell.swift */,
+				5E3CB2C01DC99A3900D27C61 /* TitleCell.xib */,
+				5EB596481DCB3F14009D8B9B /* ImageCell.swift */,
+				5EB596491DCB3F14009D8B9B /* ImageCell.xib */,
+			);
+			path = CommonCell;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +137,14 @@
 		607FACD21AFB9204008FA782 /* Example for MMParallaxCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				5E3CB2BC1DC99A3900D27C61 /* CommonCell */,
+				5E050BA71DCC24090054D7EA /* HeaderView */,
+				5EF957E01DCC8DB5006AE1EF /* BaseViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				607FACD71AFB9204008FA782 /* ParallaxViewController.swift */,
+				5EF957DE1DCC8D99006AE1EF /* RearViewController.swift */,
+				5EF957E21DCC926B006AE1EF /* FrontViewController.swift */,
+				607FACD41AFB9204008FA782 /* Info.plist */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -107,7 +157,6 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,9 +264,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2SMXTR7629;
+						LastSwiftMigration = 0800;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2SMXTR7629;
+						LastSwiftMigration = 0800;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -248,7 +301,11 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				5E050BAB1DCC242B0054D7EA /* ParallaxHeader.xib in Resources */,
+				5E3CB2C21DC99A3900D27C61 /* HeaderTitleView.xib in Resources */,
+				5EB5964B1DCB3F14009D8B9B /* ImageCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				5E3CB2C41DC99A3900D27C61 /* TitleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +416,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				5EF957E31DCC926B006AE1EF /* FrontViewController.swift in Sources */,
+				5EF957DF1DCC8D99006AE1EF /* RearViewController.swift in Sources */,
+				5E3CB2C31DC99A3900D27C61 /* TitleCell.swift in Sources */,
+				5EF957E11DCC8DB5006AE1EF /* BaseViewController.swift in Sources */,
+				607FACD81AFB9204008FA782 /* ParallaxViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				5E050BA91DCC241F0054D7EA /* ParallaxHeader.swift in Sources */,
+				5E3CB2C11DC99A3900D27C61 /* HeaderTitleView.swift in Sources */,
+				5EB5964A1DCB3F14009D8B9B /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,11 +553,14 @@
 			baseConfigurationReference = D19AFF975ABB8ADA492B94A3 /* Pods-MMParallaxCollectionView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2SMXTR7629;
 				INFOPLIST_FILE = MMParallaxCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -502,11 +569,14 @@
 			baseConfigurationReference = E7273A48895EF0091B8D99A2 /* Pods-MMParallaxCollectionView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2SMXTR7629;
 				INFOPLIST_FILE = MMParallaxCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -514,6 +584,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56CD7EE27695439CA82CA7C6 /* Pods-MMParallaxCollectionView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2SMXTR7629;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -526,6 +597,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -533,6 +605,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9A530F793E69AE583888AD2D /* Pods-MMParallaxCollectionView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2SMXTR7629;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -541,6 +614,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -1,0 +1,6 @@
+framework module MMParallaxCollectionView {
+  umbrella header "MMParallaxCollectionView-umbrella.h"
+
+  export *
+  module * { export * }
+}

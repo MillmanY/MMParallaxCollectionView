@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MMParallaxCollectionView
 
 class HeaderTitleView: MMHeaderReuseView {
     @IBOutlet weak var labTitle:UILabel!

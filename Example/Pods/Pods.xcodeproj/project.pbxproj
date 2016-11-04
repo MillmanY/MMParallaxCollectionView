@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		295D863670DD52996092B125F0271749 /* MMHeaderReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1829AC9E6CB7D7BADA65A740E2996B /* MMHeaderReuseView.swift */; };
+		40771320E23943C432A719F21F9CB6A2 /* Pods-MMParallaxCollectionView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB256408E7CB7FB2AE6CB0AD3A7986A1 /* Pods-MMParallaxCollectionView_Tests-dummy.m */; };
+		4A18E48A65128410E938BFD5EA333F2B /* MMParallaxCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 787536CE913050053D0C71C6076DC5E6 /* MMParallaxCollectionView-dummy.m */; };
+		4D62C5277B6F2D681B7ADE7CB6592251 /* Pods-MMParallaxCollectionView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FC0B0452740EA0AF8D46F90D77A7C0 /* Pods-MMParallaxCollectionView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51FBB9837E753F8B358E0FDAFF4262F0 /* MMParallaxCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E21EB8D27DE68517AFC4D7DF2D1EF8 /* MMParallaxCollectionView.swift */; };
+		526BBB8DF0D96CF822B8F8627AA582B0 /* MMParallaxCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51B7E78A2249D2B174FA569DBB9C232D /* MMParallaxCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF2BA663BB44FB8CB10BA83C5527E53 /* MMParallaxLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DD6E3B7443CEDDC1BB24F839FEA72 /* MMParallaxLayout.swift */; };
+		683B374818659853A2A0B3102AF7EFE6 /* Pods-MMParallaxCollectionView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 946619F2F58C3E4F58A2760E4D798477 /* Pods-MMParallaxCollectionView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC12044571B901C88D76F269B3C375D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		D23103537CE262EF6603D41AF5C62A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E36D7D0FA6126E6048F2FB5050362961 /* Pods-MMParallaxCollectionView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE72665A6E6EAB4FF9C1B1FDBF74F4 /* Pods-MMParallaxCollectionView_Example-dummy.m */; };
+		EB1DBB6E70D8BF867524A19273B29411 /* UIVIewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55360F66605AE3F45A12818BD4088EE /* UIVIewControllerExtension.swift */; };
+		F43D044431462698468FAEE54B8DBA9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68DBDBE54A8C4DF2744E434179D7857F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E777E7BBB948D81E58381B88267E2A6;
+			remoteInfo = MMParallaxCollectionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F6E203491385A67CEDEED1DFC67825 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FC0B0452740EA0AF8D46F90D77A7C0 /* Pods-MMParallaxCollectionView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMParallaxCollectionView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1AF1D8A9E4A08086E3D1F9882E5076D1 /* Pods-MMParallaxCollectionView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMParallaxCollectionView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C766AE967D76EE084866B9AC8561F23 /* Pods-MMParallaxCollectionView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMParallaxCollectionView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		3C25184AE1C26D6082C2FBFD20018DE1 /* MMParallaxCollectionView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MMParallaxCollectionView.xcconfig; sourceTree = "<group>"; };
+		3CA51FEA546AF187D871E350A3393E2D /* Pods-MMParallaxCollectionView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMParallaxCollectionView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3D7A86FD3C5F1EDB841300AC42F05459 /* Pods-MMParallaxCollectionView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMParallaxCollectionView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4D1829AC9E6CB7D7BADA65A740E2996B /* MMHeaderReuseView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MMHeaderReuseView.swift; sourceTree = "<group>"; };
+		51B7E78A2249D2B174FA569DBB9C232D /* MMParallaxCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMParallaxCollectionView-umbrella.h"; sourceTree = "<group>"; };
+		55EA667CACA50033E53E27737D999CAA /* MMParallaxCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MMParallaxCollectionView.modulemap; sourceTree = "<group>"; };
+		5CFE72665A6E6EAB4FF9C1B1FDBF74F4 /* Pods-MMParallaxCollectionView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMParallaxCollectionView_Example-dummy.m"; sourceTree = "<group>"; };
+		682C1F2222737D983BC54C6BE0238FFC /* Pods-MMParallaxCollectionView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMParallaxCollectionView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		755176EB228E6EC121750E6A9354DC3A /* Pods_MMParallaxCollectionView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMParallaxCollectionView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		787536CE913050053D0C71C6076DC5E6 /* MMParallaxCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MMParallaxCollectionView-dummy.m"; sourceTree = "<group>"; };
+		7FEA8B3F014547CAAE14406DDFC154EB /* Pods-MMParallaxCollectionView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MMParallaxCollectionView_Tests.modulemap"; sourceTree = "<group>"; };
+		827D53336DB6A0A4163DBE4DD87E52C8 /* Pods-MMParallaxCollectionView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMParallaxCollectionView_Tests-resources.sh"; sourceTree = "<group>"; };
+		8435646C35850954520BA2DB2CB9F2ED /* Pods-MMParallaxCollectionView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMParallaxCollectionView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		85E21EB8D27DE68517AFC4D7DF2D1EF8 /* MMParallaxCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MMParallaxCollectionView.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		946619F2F58C3E4F58A2760E4D798477 /* Pods-MMParallaxCollectionView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MMParallaxCollectionView_Example-umbrella.h"; sourceTree = "<group>"; };
+		AA9808CB195FA2F251CA49CF9D46D7B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE3D3AC68B2D70DC981EAFF2974A38FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB6DBA71308DF99E47CF0AD337C50D3 /* Pods-MMParallaxCollectionView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMParallaxCollectionView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B1FBCCA9D6C8F56F82E23D52F0DE7235 /* Pods-MMParallaxCollectionView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MMParallaxCollectionView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BB256408E7CB7FB2AE6CB0AD3A7986A1 /* Pods-MMParallaxCollectionView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MMParallaxCollectionView_Tests-dummy.m"; sourceTree = "<group>"; };
+		C7EC0881FD9CDAA8D64637CAABF95779 /* Pods_MMParallaxCollectionView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMParallaxCollectionView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DE85CE76E5674BA91C358FFA7FD1F8F4 /* Pods-MMParallaxCollectionView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MMParallaxCollectionView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E2A9E0ACF3D0EDBCD30F0F5ACC42021B /* Pods-MMParallaxCollectionView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MMParallaxCollectionView_Example.modulemap"; sourceTree = "<group>"; };
+		E42DD6E3B7443CEDDC1BB24F839FEA72 /* MMParallaxLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MMParallaxLayout.swift; sourceTree = "<group>"; };
+		ED0C5A9704A8EEFCD5D98CBB9A71DF11 /* MMParallaxCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MMParallaxCollectionView-prefix.pch"; sourceTree = "<group>"; };
+		F55360F66605AE3F45A12818BD4088EE /* UIVIewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIVIewControllerExtension.swift; sourceTree = "<group>"; };
+		F5CC0E4688E792C52CBCF2348A8D968E /* Pods-MMParallaxCollectionView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MMParallaxCollectionView_Example-resources.sh"; sourceTree = "<group>"; };
+		F9E9CDB5483D3890C0B861B3D261513C /* Pods-MMParallaxCollectionView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MMParallaxCollectionView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB9DD84CB9E8B9E73D40CB0FE09F4FC3 /* MMParallaxCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMParallaxCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D42BC2923A18CF543ECCF231D6E76AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC12044571B901C88D76F269B3C375D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687C2E5F5E2C3D330FE70C62A141443D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23103537CE262EF6603D41AF5C62A1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B74D6D37BC513B50680F85F1F87D03BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43D044431462698468FAEE54B8DBA9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2751499971555B2E8A87C61968FD9DAC /* Pods-MMParallaxCollectionView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				AE3D3AC68B2D70DC981EAFF2974A38FF /* Info.plist */,
+				E2A9E0ACF3D0EDBCD30F0F5ACC42021B /* Pods-MMParallaxCollectionView_Example.modulemap */,
+				1AF1D8A9E4A08086E3D1F9882E5076D1 /* Pods-MMParallaxCollectionView_Example-acknowledgements.markdown */,
+				F9E9CDB5483D3890C0B861B3D261513C /* Pods-MMParallaxCollectionView_Example-acknowledgements.plist */,
+				5CFE72665A6E6EAB4FF9C1B1FDBF74F4 /* Pods-MMParallaxCollectionView_Example-dummy.m */,
+				8435646C35850954520BA2DB2CB9F2ED /* Pods-MMParallaxCollectionView_Example-frameworks.sh */,
+				F5CC0E4688E792C52CBCF2348A8D968E /* Pods-MMParallaxCollectionView_Example-resources.sh */,
+				946619F2F58C3E4F58A2760E4D798477 /* Pods-MMParallaxCollectionView_Example-umbrella.h */,
+				DE85CE76E5674BA91C358FFA7FD1F8F4 /* Pods-MMParallaxCollectionView_Example.debug.xcconfig */,
+				3CA51FEA546AF187D871E350A3393E2D /* Pods-MMParallaxCollectionView_Example.release.xcconfig */,
+			);
+			name = "Pods-MMParallaxCollectionView_Example";
+			path = "Target Support Files/Pods-MMParallaxCollectionView_Example";
+			sourceTree = "<group>";
+		};
+		36F26264342120972066AE057D890A12 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4D1829AC9E6CB7D7BADA65A740E2996B /* MMHeaderReuseView.swift */,
+				85E21EB8D27DE68517AFC4D7DF2D1EF8 /* MMParallaxCollectionView.swift */,
+				E42DD6E3B7443CEDDC1BB24F839FEA72 /* MMParallaxLayout.swift */,
+				F55360F66605AE3F45A12818BD4088EE /* UIVIewControllerExtension.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		47BAA917109AE02819A904F4A777F071 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06F6E203491385A67CEDEED1DFC67825 /* Info.plist */,
+				55EA667CACA50033E53E27737D999CAA /* MMParallaxCollectionView.modulemap */,
+				3C25184AE1C26D6082C2FBFD20018DE1 /* MMParallaxCollectionView.xcconfig */,
+				787536CE913050053D0C71C6076DC5E6 /* MMParallaxCollectionView-dummy.m */,
+				ED0C5A9704A8EEFCD5D98CBB9A71DF11 /* MMParallaxCollectionView-prefix.pch */,
+				51B7E78A2249D2B174FA569DBB9C232D /* MMParallaxCollectionView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MMParallaxCollectionView";
+			sourceTree = "<group>";
+		};
+		57A150A76DE2EBA3BB5A0CB2581B2F14 /* MMParallaxCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				36F26264342120972066AE057D890A12 /* Classes */,
+			);
+			path = MMParallaxCollectionView;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D1F8AAA49B92A57FF1A38367FB62E13F /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				AB596E29F62DE9A75DEC8D9531D9E026 /* Products */,
+				CBAF7284C00D531EB22CEB3AC836271F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AB596E29F62DE9A75DEC8D9531D9E026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB9DD84CB9E8B9E73D40CB0FE09F4FC3 /* MMParallaxCollectionView.framework */,
+				755176EB228E6EC121750E6A9354DC3A /* Pods_MMParallaxCollectionView_Example.framework */,
+				C7EC0881FD9CDAA8D64637CAABF95779 /* Pods_MMParallaxCollectionView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBAF7284C00D531EB22CEB3AC836271F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2751499971555B2E8A87C61968FD9DAC /* Pods-MMParallaxCollectionView_Example */,
+				E5ECEC33A6BE0891E97D021679E71D38 /* Pods-MMParallaxCollectionView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D1F8AAA49B92A57FF1A38367FB62E13F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D744B082A03B3BB9B993AD4FD512426D /* MMParallaxCollectionView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D744B082A03B3BB9B993AD4FD512426D /* MMParallaxCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				57A150A76DE2EBA3BB5A0CB2581B2F14 /* MMParallaxCollectionView */,
+				47BAA917109AE02819A904F4A777F071 /* Support Files */,
+			);
+			name = MMParallaxCollectionView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E5ECEC33A6BE0891E97D021679E71D38 /* Pods-MMParallaxCollectionView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AA9808CB195FA2F251CA49CF9D46D7B9 /* Info.plist */,
+				7FEA8B3F014547CAAE14406DDFC154EB /* Pods-MMParallaxCollectionView_Tests.modulemap */,
+				B1FBCCA9D6C8F56F82E23D52F0DE7235 /* Pods-MMParallaxCollectionView_Tests-acknowledgements.markdown */,
+				AEB6DBA71308DF99E47CF0AD337C50D3 /* Pods-MMParallaxCollectionView_Tests-acknowledgements.plist */,
+				BB256408E7CB7FB2AE6CB0AD3A7986A1 /* Pods-MMParallaxCollectionView_Tests-dummy.m */,
+				1C766AE967D76EE084866B9AC8561F23 /* Pods-MMParallaxCollectionView_Tests-frameworks.sh */,
+				827D53336DB6A0A4163DBE4DD87E52C8 /* Pods-MMParallaxCollectionView_Tests-resources.sh */,
+				18FC0B0452740EA0AF8D46F90D77A7C0 /* Pods-MMParallaxCollectionView_Tests-umbrella.h */,
+				682C1F2222737D983BC54C6BE0238FFC /* Pods-MMParallaxCollectionView_Tests.debug.xcconfig */,
+				3D7A86FD3C5F1EDB841300AC42F05459 /* Pods-MMParallaxCollectionView_Tests.release.xcconfig */,
+			);
+			name = "Pods-MMParallaxCollectionView_Tests";
+			path = "Target Support Files/Pods-MMParallaxCollectionView_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0741F1CE2A6C8EC16C035A9C134B89B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D62C5277B6F2D681B7ADE7CB6592251 /* Pods-MMParallaxCollectionView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		123B7BFB159ED7FF528DBA8ACAF44794 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683B374818659853A2A0B3102AF7EFE6 /* Pods-MMParallaxCollectionView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E190C05D37CCA0B04403D18004C368 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				526BBB8DF0D96CF822B8F8627AA582B0 /* MMParallaxCollectionView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E777E7BBB948D81E58381B88267E2A6 /* MMParallaxCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47C0E5976F11256E4C392F9A30B72B20 /* Build configuration list for PBXNativeTarget "MMParallaxCollectionView" */;
+			buildPhases = (
+				DB781C4E69091D32EFA02B2D9FE8FCA3 /* Sources */,
+				B74D6D37BC513B50680F85F1F87D03BC /* Frameworks */,
+				82E190C05D37CCA0B04403D18004C368 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMParallaxCollectionView;
+			productName = MMParallaxCollectionView;
+			productReference = FB9DD84CB9E8B9E73D40CB0FE09F4FC3 /* MMParallaxCollectionView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB543E6EB4283C812F4F951231C04595 /* Pods-MMParallaxCollectionView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09BEE1B29E6734D755D4FB7C245A9458 /* Build configuration list for PBXNativeTarget "Pods-MMParallaxCollectionView_Example" */;
+			buildPhases = (
+				6B29A5BC9844953830C3D505FE40C146 /* Sources */,
+				687C2E5F5E2C3D330FE70C62A141443D /* Frameworks */,
+				123B7BFB159ED7FF528DBA8ACAF44794 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A88B369059431EE6C435A2C17AF896C7 /* PBXTargetDependency */,
+			);
+			name = "Pods-MMParallaxCollectionView_Example";
+			productName = "Pods-MMParallaxCollectionView_Example";
+			productReference = 755176EB228E6EC121750E6A9354DC3A /* Pods_MMParallaxCollectionView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B76DAB5E52A81B7030EF5D5F7E1062F2 /* Pods-MMParallaxCollectionView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41354DEEAB639CE2926C46504ADA7BF /* Build configuration list for PBXNativeTarget "Pods-MMParallaxCollectionView_Tests" */;
+			buildPhases = (
+				0F754410B9EDEE41EE6BEB05DA794236 /* Sources */,
+				3D42BC2923A18CF543ECCF231D6E76AF /* Frameworks */,
+				0741F1CE2A6C8EC16C035A9C134B89B8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MMParallaxCollectionView_Tests";
+			productName = "Pods-MMParallaxCollectionView_Tests";
+			productReference = C7EC0881FD9CDAA8D64637CAABF95779 /* Pods_MMParallaxCollectionView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AB596E29F62DE9A75DEC8D9531D9E026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E777E7BBB948D81E58381B88267E2A6 /* MMParallaxCollectionView */,
+				AB543E6EB4283C812F4F951231C04595 /* Pods-MMParallaxCollectionView_Example */,
+				B76DAB5E52A81B7030EF5D5F7E1062F2 /* Pods-MMParallaxCollectionView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F754410B9EDEE41EE6BEB05DA794236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40771320E23943C432A719F21F9CB6A2 /* Pods-MMParallaxCollectionView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B29A5BC9844953830C3D505FE40C146 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E36D7D0FA6126E6048F2FB5050362961 /* Pods-MMParallaxCollectionView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB781C4E69091D32EFA02B2D9FE8FCA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				295D863670DD52996092B125F0271749 /* MMHeaderReuseView.swift in Sources */,
+				4A18E48A65128410E938BFD5EA333F2B /* MMParallaxCollectionView-dummy.m in Sources */,
+				51FBB9837E753F8B358E0FDAFF4262F0 /* MMParallaxCollectionView.swift in Sources */,
+				5FF2BA663BB44FB8CB10BA83C5527E53 /* MMParallaxLayout.swift in Sources */,
+				EB1DBB6E70D8BF867524A19273B29411 /* UIVIewControllerExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A88B369059431EE6C435A2C17AF896C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MMParallaxCollectionView;
+			target = 3E777E7BBB948D81E58381B88267E2A6 /* MMParallaxCollectionView */;
+			targetProxy = 68DBDBE54A8C4DF2744E434179D7857F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2E3E351F29D3BF3A6BBDDC67B691BA34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C25184AE1C26D6082C2FBFD20018DE1 /* MMParallaxCollectionView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMParallaxCollectionView/MMParallaxCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMParallaxCollectionView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMParallaxCollectionView/MMParallaxCollectionView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MMParallaxCollectionView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		334F20D8D490984683161693AEC4C382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 682C1F2222737D983BC54C6BE0238FFC /* Pods-MMParallaxCollectionView_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMParallaxCollectionView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMParallaxCollectionView_Tests/Pods-MMParallaxCollectionView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MMParallaxCollectionView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD58EDB6E3354E2F5CB157CE53675A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA51FEA546AF187D871E350A3393E2D /* Pods-MMParallaxCollectionView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMParallaxCollectionView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMParallaxCollectionView_Example/Pods-MMParallaxCollectionView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MMParallaxCollectionView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B1A8011AEA5095B67204251EB60D7588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C25184AE1C26D6082C2FBFD20018DE1 /* MMParallaxCollectionView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MMParallaxCollectionView/MMParallaxCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MMParallaxCollectionView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MMParallaxCollectionView/MMParallaxCollectionView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MMParallaxCollectionView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2851051016EBC29867ECE92752EEB6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE85CE76E5674BA91C358FFA7FD1F8F4 /* Pods-MMParallaxCollectionView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMParallaxCollectionView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMParallaxCollectionView_Example/Pods-MMParallaxCollectionView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MMParallaxCollectionView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6257CDEF6CC3614F19B53707B228F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7A86FD3C5F1EDB841300AC42F05459 /* Pods-MMParallaxCollectionView_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MMParallaxCollectionView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MMParallaxCollectionView_Tests/Pods-MMParallaxCollectionView_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MMParallaxCollectionView_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09BEE1B29E6734D755D4FB7C245A9458 /* Build configuration list for PBXNativeTarget "Pods-MMParallaxCollectionView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2851051016EBC29867ECE92752EEB6A /* Debug */,
+				AD58EDB6E3354E2F5CB157CE53675A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47C0E5976F11256E4C392F9A30B72B20 /* Build configuration list for PBXNativeTarget "MMParallaxCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A8011AEA5095B67204251EB60D7588 /* Debug */,
+				2E3E351F29D3BF3A6BBDDC67B691BA34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D41354DEEAB639CE2926C46504ADA7BF /* Build configuration list for PBXNativeTarget "Pods-MMParallaxCollectionView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				334F20D8D490984683161693AEC4C382 /* Debug */,
+				B6257CDEF6CC3614F19B53707B228F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

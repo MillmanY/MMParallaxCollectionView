@@ -8,9 +8,7 @@
 
 import UIKit
 import MMParallaxCollectionView
-class ViewController: UIViewController {
-    @IBOutlet weak var collection:MMParallaxCollectionView!
-    
+class ParallaxViewController: BaseViewController {
     var data = [["Demo rear","Demo front"],["image1","image2","image3","image4","image5"]]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +29,24 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 }
 
-extension ViewController : UICollectionViewDelegateFlowLayout {
+extension ParallaxViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collection.showNavigationBar(isShow: true, animated: true)
-        self.performSegue(withIdentifier: "Push", sender: nil)
+        
+        if indexPath.section == 0 {
+            switch indexPath.row {
+            case 0:
+                self.performSegue(withIdentifier: "rear", sender: nil)
+            case 1:
+                self.performSegue(withIdentifier: "front", sender: nil)
+
+            default:
+                break
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -54,7 +64,7 @@ extension ViewController : UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension ViewController: UICollectionViewDataSource {
+extension ParallaxViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
@@ -92,7 +102,7 @@ extension ViewController: UICollectionViewDataSource {
     func header(with view:UICollectionReusableView) -> UICollectionReusableView {
         if let v = view as? HeaderTitleView {
             v.labTitle.text = "Header View"
-
+            
             return v
         }
         return UICollectionReusableView()

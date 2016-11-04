@@ -1,0 +1,6 @@
+framework module Pods_MMParallaxCollectionView_Example {
+  umbrella header "Pods-MMParallaxCollectionView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
