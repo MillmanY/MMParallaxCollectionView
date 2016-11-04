@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TitleCell" id="gTV-IL-0wX" customClass="TitleCell" customModule="ParallaxDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="48"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSc-88-wx9">
+                        <color key="backgroundColor" red="0.1176470588" green="0.70196078429999997" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="0.2666666667" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZSc-88-wx9" secondAttribute="bottom" id="QFe-Nb-VVa"/>
+                <constraint firstItem="ZSc-88-wx9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Z1P-OW-3YQ"/>
+                <constraint firstAttribute="trailing" secondItem="ZSc-88-wx9" secondAttribute="trailing" id="f0R-Iv-rHr"/>
+                <constraint firstItem="ZSc-88-wx9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fmS-nA-Hcd"/>
+            </constraints>
+            <size key="customSize" width="120" height="48"/>
+            <connections>
+                <outlet property="labTitle" destination="ZSc-88-wx9" id="4Xf-xD-L6K"/>
+            </connections>
+            <point key="canvasLocation" x="69" y="53"/>
+        </collectionViewCell>
+    </objects>
+</document>
