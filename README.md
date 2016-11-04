@@ -35,6 +35,11 @@ Step:
   
      class HeaderTitleView: MMHeaderReuseView {
      }
+     
+4.Control yourself is show the bar
+    
+    collectionView.showNavigationBar(isShow: false, animated: false)
+
 ## Installation
 
 MMParallaxCollectionView is available through [CocoaPods](http://cocoapods.org). To install
