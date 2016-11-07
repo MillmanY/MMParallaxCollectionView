@@ -29,9 +29,12 @@ open class MMParallaxCollectionView: UICollectionView {
     fileprivate var parallaxLayout = MMParallaxLayout()
     fileprivate var parallaxTopConstraint:NSLayoutConstraint?
     
+    fileprivate var navHiddenRate:((_ rate:CGFloat)->Void)?
+    
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
         self.setUp()
+        
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -45,14 +48,20 @@ open class MMParallaxCollectionView: UICollectionView {
             if let superV = self.superview {
                 self.collectionVC = UIViewController.currentViewController()
                 self.originalNavHeight = (self.collectionVC!.navigationController != nil) ? self.collectionVC!.navigationController!.navigationBar.frame.height : 0
+                
                 view.layer.zPosition = -1
                 self.backgroundColor = UIColor.clear
                 superV.addSubview(view)
                 superV.sendSubview(toBack: view)
                 self.topMargin = self.getCollectionMargin()
                 let addOffset = self.statusHeight - self.topMargin
-                self.contentInset = UIEdgeInsets.init(top: height + self.originalNavHeight+addOffset, left: 0, bottom: 0, right: 0)
-                self.contentOffset = CGPoint.init(x: 0, y: -(height + self.originalNavHeight+addOffset))
+                
+                
+                UIView.animate(withDuration: 0.3, delay: 1.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 5.0, options: .curveEaseIn, animations: {
+                    self.contentInset = UIEdgeInsets.init(top: height+self.originalNavHeight+addOffset, left: 0, bottom: 0, right: 0)
+                    self.contentOffset = CGPoint.init(x: 0, y: -(height+self.originalNavHeight+addOffset))
+
+                }, completion: nil)
 
                 view.translatesAutoresizingMaskIntoConstraints = false
                 let left = NSLayoutConstraint.init(item: view, attribute: .left, relatedBy: .equal, toItem: superV, attribute: .left, multiplier: 1.0, constant: 0.0)
@@ -61,28 +70,34 @@ open class MMParallaxCollectionView: UICollectionView {
                 let height = NSLayoutConstraint.init(item: view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height)
                 superV.addConstraints([left,right,self.parallaxTopConstraint!,height])
                 self.parallaxView = view
-                UIView.animate(withDuration: 0.3, animations: {
-                    superV.layoutIfNeeded()
-                })
+                superV.layoutIfNeeded()
             }
         }
     }
     
+    
     public func showNavigationBar(isShow:Bool,animated:Bool) {
         
         if let bar = self.collectionVC?.navigationController?.navigationBar{
+            let alpha:CGFloat = isShow  ? 1.0 : 0.0
             if animated {
                 UIView.animate(withDuration: 0.3, animations: {
-                    bar.frame.origin.y = (isShow) ? self.statusHeight : -self.originalNavHeight
+                    bar.frame.origin.y = (isShow) ? self.statusHeight : self.topMargin-self.originalNavHeight
+                    self.barItemAlpha(alpha: alpha)
                 })
             } else {
-                bar.frame.origin.y = (isShow) ? self.statusHeight : -self.originalNavHeight
+                bar.frame.origin.y = (isShow) ? self.statusHeight : self.topMargin-self.originalNavHeight
+                self.barItemAlpha(alpha: alpha)
             }
         }
     }
     
     public func setHeaderStyle(style:HeaderStyle) {
         parallaxLayout.collectionStyle = style
+    }
+    
+    public func getNavigationRate(rate:@escaping (CGFloat)->Void) {
+        self.navHiddenRate = rate
     }
 }
 
@@ -149,7 +164,12 @@ extension MMParallaxCollectionView {
         
         DispatchQueue.main.async {
             self.collectionVC = UIViewController.currentViewController()
-            self.originalNavHeight = (self.collectionVC!.navigationController != nil) ? self.collectionVC!.navigationController!.navigationBar.frame.height : 0
+            
+            if let nav = self.collectionVC?.navigationController {
+                self.originalNavHeight = nav.navigationBar.frame.height
+            } else {
+                self.originalNavHeight = 0
+            }
             self.topMargin = self.getCollectionMargin()
             self.contentInset = UIEdgeInsets.init(top: self.originalNavHeight + self.statusHeight-self.topMargin, left: 0, bottom: 0, right: 0)
             let addOffset = self.statusHeight - self.topMargin
@@ -175,11 +195,14 @@ extension MMParallaxCollectionView {
         if let bar = self.collectionVC?.navigationController?.navigationBar{
             let total = originalNavHeight + statusHeight - topMargin
 
-            if self.contentOffset.y >= -total && self.contentOffset.y <= 0 {
+            if self.contentOffset.y >= -total && self.contentOffset.y < 0 {
                 let value = abs(self.contentOffset.y)
-                bar.frame.origin.y = self.contentOffset.y < 0 ? value - originalNavHeight + topMargin : -(originalNavHeight)
+                bar.frame.origin.y = value - originalNavHeight + topMargin
+                let minY = (statusHeight-originalNavHeight)
+                let alphaPercent = (bar.frame.origin.y-minY)/originalNavHeight
+                self.barItemAlpha(alpha: alphaPercent)
             } else if self.contentOffset.y <= -total {
-                bar.frame.origin.y = statusHeight
+                self.showNavigationBar(isShow: true, animated: false)
             } else if self.isBarNeedHidden(){
                 self.showNavigationBar(isShow: false, animated: false)
             }
@@ -211,7 +234,7 @@ extension MMParallaxCollectionView {
     
     fileprivate func isBarNeedHidden () -> Bool {
         if let _ = collectionVC?.navigationController?.navigationBar {
-            return self.contentOffset.y >= 0
+            return self.contentOffset.y >= 20
         }
         return false
     }
@@ -224,4 +247,11 @@ extension MMParallaxCollectionView {
         }
         return 0.0
     }
+    
+    fileprivate func barItemAlpha(alpha:CGFloat) {
+        if let rate = self.navHiddenRate {
+            rate(alpha)
+        }
+    }
+
 }

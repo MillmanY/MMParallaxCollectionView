@@ -45,14 +45,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="vkD-rq-MRZ" secondAttribute="trailing" constant="-16" id="8p6-ll-Bhj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vkD-rq-MRZ" secondAttribute="trailing" constant="-20" id="8p6-ll-Bhj"/>
                             <constraint firstItem="vkD-rq-MRZ" firstAttribute="top" secondItem="kQJ-Eh-mub" secondAttribute="bottom" constant="-44" id="KZ5-Tv-gDd"/>
                             <constraint firstItem="cbA-Az-QrY" firstAttribute="top" secondItem="vkD-rq-MRZ" secondAttribute="bottom" id="cTa-kK-5hl"/>
-                            <constraint firstItem="vkD-rq-MRZ" firstAttribute="leading" secondItem="Fu3-5d-gm3" secondAttribute="leadingMargin" constant="-16" id="twM-aJ-oPl"/>
+                            <constraint firstItem="vkD-rq-MRZ" firstAttribute="leading" secondItem="Fu3-5d-gm3" secondAttribute="leadingMargin" constant="-20" id="twM-aJ-oPl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GiX-Sy-HQr">
-                        <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="cYE-K9-lMK">
                             <rect key="frame" x="113" y="6" width="150" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,6 +73,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collection" destination="vkD-rq-MRZ" id="jUb-DH-LYT"/>
+                        <outlet property="titleView" destination="NSM-3O-WiQ" id="EBF-kR-h0H"/>
                         <segue destination="XbZ-SP-hiY" kind="show" identifier="rear" id="ckB-2h-8oe"/>
                         <segue destination="N6X-y2-O4g" kind="show" identifier="front" id="441-gK-ifC"/>
                     </connections>
@@ -121,8 +121,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HKw-WO-yk0" firstAttribute="top" secondItem="8eT-nh-xuN" secondAttribute="bottom" id="4HH-2f-uAq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="8eT-nh-xuN" secondAttribute="trailing" constant="-16" id="B6b-Fj-17X"/>
-                            <constraint firstItem="8eT-nh-xuN" firstAttribute="leading" secondItem="shc-KM-YQj" secondAttribute="leadingMargin" constant="-16" id="NPl-aG-ooD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8eT-nh-xuN" secondAttribute="trailing" constant="-20" id="B6b-Fj-17X"/>
+                            <constraint firstItem="8eT-nh-xuN" firstAttribute="leading" secondItem="shc-KM-YQj" secondAttribute="leadingMargin" constant="-20" id="NPl-aG-ooD"/>
                             <constraint firstItem="8eT-nh-xuN" firstAttribute="top" secondItem="o93-Va-NRB" secondAttribute="bottom" constant="-44" id="rXi-bR-LjZ"/>
                         </constraints>
                     </view>
@@ -188,9 +188,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="41F-TN-KVF" secondAttribute="trailing" constant="-16" id="FD5-fx-o32"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="41F-TN-KVF" secondAttribute="trailing" constant="-20" id="FD5-fx-o32"/>
                             <constraint firstItem="Vol-PH-SCh" firstAttribute="top" secondItem="41F-TN-KVF" secondAttribute="bottom" id="PgI-Ew-ONO"/>
-                            <constraint firstItem="41F-TN-KVF" firstAttribute="leading" secondItem="0Mx-Vk-D7c" secondAttribute="leadingMargin" constant="-16" id="Ygy-3f-tT3"/>
+                            <constraint firstItem="41F-TN-KVF" firstAttribute="leading" secondItem="0Mx-Vk-D7c" secondAttribute="leadingMargin" constant="-20" id="Ygy-3f-tT3"/>
                             <constraint firstItem="41F-TN-KVF" firstAttribute="top" secondItem="Ia8-am-9SJ" secondAttribute="bottom" constant="-64" id="dlA-A4-VIl"/>
                         </constraints>
                     </view>

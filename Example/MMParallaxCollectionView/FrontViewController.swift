@@ -14,6 +14,11 @@ class FrontViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collection.setHeaderStyle(style: .front)
+        let color = self.navigationController!.navigationBar.tintColor
+        
+        collection.getNavigationRate { (rate) in
+            self.navigationController!.navigationBar.tintColor = color!.withAlphaComponent(rate)
+        }
 
         // Do any additional setup after loading the view.
     }
