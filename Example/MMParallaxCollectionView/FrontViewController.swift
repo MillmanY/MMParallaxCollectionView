@@ -88,14 +88,5 @@ extension FrontViewController: UICollectionViewDataSource {
         
         return UICollectionReusableView()
     }
-    
-    func header(with view:UICollectionReusableView) -> UICollectionReusableView {
-        if let v = view as? HeaderTitleView {
-            v.labTitle.text = "Header View"
-            
-            return v
-        }
-        return UICollectionReusableView()
-    }
 }
 
