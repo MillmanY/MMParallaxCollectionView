@@ -45,8 +45,6 @@ open class MMParallaxCollectionView: UICollectionView {
             if let superV = self.superview {
                 self.collectionVC = UIViewController.currentViewController()
                 self.originalNavHeight = (self.collectionVC!.navigationController != nil) ? self.collectionVC!.navigationController!.navigationBar.frame.height : 0
-                
-                let topHeight = self.statusHeight + self.originalNavHeight
                 view.layer.zPosition = -1
                 self.backgroundColor = UIColor.clear
                 superV.addSubview(view)
@@ -174,10 +172,8 @@ extension MMParallaxCollectionView {
     }
     
     fileprivate func shiftNavigationWith(scrollView:UIScrollView,oldValue:CGPoint) {
-        let realOffsetY = scrollView.contentOffset.y+scrollView.contentInset.top
         if let bar = self.collectionVC?.navigationController?.navigationBar{
             let total = originalNavHeight + statusHeight - topMargin
-            let translcentHeight:CGFloat = (bar.isTranslucent) ? 0 : (originalNavHeight + statusHeight)
 
             if self.contentOffset.y >= -total && self.contentOffset.y <= 0 {
                 let value = abs(self.contentOffset.y)
