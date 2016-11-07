@@ -59,7 +59,7 @@ open class MMParallaxCollectionView: UICollectionView {
                 view.translatesAutoresizingMaskIntoConstraints = false
                 let left = NSLayoutConstraint.init(item: view, attribute: .left, relatedBy: .equal, toItem: superV, attribute: .left, multiplier: 1.0, constant: 0.0)
                 let right = NSLayoutConstraint.init(item: view, attribute: .right, relatedBy: .equal, toItem: superV, attribute: .right, multiplier: 1.0, constant: 0.0)
-                self.parallaxTopConstraint = NSLayoutConstraint.init(item: view, attribute: .top, relatedBy: .equal, toItem: superV, attribute: .top, multiplier: 1.0, constant: topHeight)
+                self.parallaxTopConstraint = NSLayoutConstraint.init(item: view, attribute: .top, relatedBy: .equal, toItem: superV, attribute: .top, multiplier: 1.0, constant: 0)
                 let height = NSLayoutConstraint.init(item: view, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height)
                 superV.addConstraints([left,right,self.parallaxTopConstraint!,height])
                 self.parallaxView = view

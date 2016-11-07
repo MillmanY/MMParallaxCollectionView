@@ -12,6 +12,7 @@ class ParallaxViewController: BaseViewController {
     var data = [["Demo rear","Demo front"],["image1","image2","image3","image4","image5"]]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.collection.register(UINib.init(nibName: "HeaderTitleView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "HeaderTitleView")
         self.collection.register(UINib.init(nibName: "TitleCell", bundle: nil), forCellWithReuseIdentifier: "TitleCell")
         
