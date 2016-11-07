@@ -52,6 +52,12 @@ Step:
 4.Control yourself is show the bar
     
     collectionView.showNavigationBar(isShow: false, animated: false)
+5.get navigation hiding Rate(Ex.This function can help you hide the item on the navigation Bar)
+
+    collection.getNavigationRate { (rate) in
+       self.titleView.alpha = rate
+    }
+
 
 ## Installation
 
