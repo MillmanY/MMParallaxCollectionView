@@ -109,6 +109,7 @@ extension MMParallaxCollectionView {
                 current == self.collectionVC {
                 UIView.animate(withDuration: 0.3, animations: {
                     self.shiftNavigationWith(scrollView: self, oldValue: .zero)
+                    self.shiftParallax(scrollView: self, oldValue: .zero)
                 })
             }
         }
@@ -127,6 +128,7 @@ extension MMParallaxCollectionView {
             if self.contentOffset.y == oldValue.y {
                 return
             }
+            self.shiftParallax(scrollView: self, oldValue: oldValue)
             self.shiftNavigationWith(scrollView: self, oldValue: oldValue)
             if let parallax = parallaxView{
                 self.drawMaskWith(parallax: parallax, scrollView: self,oldValue: oldValue)
@@ -152,6 +154,9 @@ extension MMParallaxCollectionView {
             self.originalNavHeight = (self.collectionVC!.navigationController != nil) ? self.collectionVC!.navigationController!.navigationBar.frame.height : 0
             self.topMargin = self.getCollectionMargin()
             self.contentInset = UIEdgeInsets.init(top: self.originalNavHeight + self.statusHeight-self.topMargin, left: 0, bottom: 0, right: 0)
+            let addOffset = self.statusHeight - self.topMargin
+            self.contentOffset = CGPoint.init(x: 0, y: -(self.originalNavHeight+addOffset))
+
         }
     }
     
@@ -172,30 +177,38 @@ extension MMParallaxCollectionView {
         let realOffsetY = scrollView.contentOffset.y+scrollView.contentInset.top
         if let bar = self.collectionVC?.navigationController?.navigationBar{
             let total = originalNavHeight + statusHeight - topMargin
+            let translcentHeight:CGFloat = (bar.isTranslucent) ? 0 : (originalNavHeight + statusHeight)
 
-            if let p = parallaxTopConstraint {
-                // - up + down
-                let shiftValue = oldValue.y-scrollView.contentOffset.y
-                let willShiftY = p.constant+(shiftValue/2)
-                
-                if realOffsetY < 0 {
-                    p.constant = topMargin + total
-                } else if willShiftY > topMargin && willShiftY < total+topMargin{
-                    p.constant = willShiftY
-                } else if willShiftY < topMargin {
-                    p.constant = topMargin
-                } else if willShiftY > total {
-                    p.constant = topMargin + total
-                }
-            }
-            
             if self.contentOffset.y >= -total && self.contentOffset.y <= 0 {
                 let value = abs(self.contentOffset.y)
-                bar.frame.origin.y = self.contentOffset.y < 0 ? value - originalNavHeight + topMargin : -originalNavHeight
+                bar.frame.origin.y = self.contentOffset.y < 0 ? value - originalNavHeight + topMargin : -(originalNavHeight)
             } else if self.contentOffset.y <= -total {
                 bar.frame.origin.y = statusHeight
             } else if self.isBarNeedHidden(){
                 self.showNavigationBar(isShow: false, animated: false)
+            }
+        }
+    }
+    
+    fileprivate func shiftParallax(scrollView:UIScrollView,oldValue:CGPoint) {
+        
+        if let bar = self.collectionVC?.navigationController?.navigationBar,
+           let p = parallaxTopConstraint{
+            // - up + down
+            let shiftValue = oldValue.y-scrollView.contentOffset.y
+            let willShiftY = p.constant+(shiftValue/2)
+            let realOffsetY = scrollView.contentOffset.y+scrollView.contentInset.top
+            let total = (bar.isTranslucent) ? originalNavHeight + statusHeight : 0.0
+            
+            let translcentHeight:CGFloat = (bar.isTranslucent) ? 0 : -(originalNavHeight + statusHeight)
+            if realOffsetY < 0 {
+                p.constant = total
+            } else if willShiftY > topMargin+translcentHeight && willShiftY < total{
+                p.constant = willShiftY
+            } else if willShiftY < topMargin+translcentHeight {
+                p.constant = topMargin + translcentHeight
+            } else if willShiftY > total {
+                p.constant =  total
             }
         }
     }

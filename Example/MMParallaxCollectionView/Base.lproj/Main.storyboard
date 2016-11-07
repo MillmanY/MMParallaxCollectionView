@@ -43,7 +43,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="vkD-rq-MRZ" secondAttribute="trailing" constant="-16" id="8p6-ll-Bhj"/>
                             <constraint firstItem="vkD-rq-MRZ" firstAttribute="top" secondItem="kQJ-Eh-mub" secondAttribute="bottom" constant="-44" id="KZ5-Tv-gDd"/>
