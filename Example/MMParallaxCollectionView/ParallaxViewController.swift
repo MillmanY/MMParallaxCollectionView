@@ -26,7 +26,7 @@ class ParallaxViewController: BaseViewController {
         
     func testParallax() {
         let demo = ParallaxHeader.initWith(xib: "ParallaxHeader")
-        collection.addParallax(view: demo,height: 180)
+        collection.addParallax(view: demo,height: 180)        
     }
     
     override func didReceiveMemoryWarning() {

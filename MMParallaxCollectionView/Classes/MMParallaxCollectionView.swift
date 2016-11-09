@@ -189,6 +189,11 @@ extension MMParallaxCollectionView {
         shape.fillColor  = UIColor.blue.cgColor
         shape.path = UIBezierPath.init(rect: rect).cgPath
         parallax.layer.mask = shape
+        
+        let layer = CAShapeLayer()
+        let mask = (realOffsetY < 0) ? realOffsetY : 0
+        layer.path = UIBezierPath.init(rect: CGRect.init(x: 0, y: mask, width: self.frame.width, height: self.contentSize.height)).cgPath
+        self.layer.mask = layer
     }
     
     fileprivate func shiftNavigationWith(scrollView:UIScrollView,oldValue:CGPoint) {
