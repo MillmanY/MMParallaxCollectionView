@@ -42,26 +42,29 @@ open class MMParallaxCollectionView: UICollectionView {
         self.setUp()
     }
     
-    public func addParallax(view:UIView,height:CGFloat) {
-        
+public func addParallax(view:UIView,height:CGFloat) {
+  
         DispatchQueue.main.async {
             if let superV = self.superview {
                 self.collectionVC = UIViewController.currentViewController()
-                self.originalNavHeight = (self.collectionVC!.navigationController != nil) ? self.collectionVC!.navigationController!.navigationBar.frame.height : 0
-                
+//                self.originalNavHeight = (self.collectionVC!.navigationController != nil) ? self.collectionVC!.navigationController!.navigationBar.frame.height : 0
+                self.originalNavHeight = 0.0
+
                 view.layer.zPosition = -1
                 self.backgroundColor = UIColor.clear
                 superV.addSubview(view)
                 superV.sendSubview(toBack: view)
-                self.topMargin = self.getCollectionMargin()
+//                self.topMargin = self.getCollectionMargin()
+                self.topMargin = 0.0
+
                 let addOffset = self.statusHeight - self.topMargin
                 
                 
-                UIView.animate(withDuration: 0.3, delay: 1.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 5.0, options: .curveEaseIn, animations: {
+//                UIView.animate(withDuration: 0.3, delay: 1.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 5.0, options: .curveEaseIn, animations: {
                     self.contentInset = UIEdgeInsets.init(top: height+self.originalNavHeight+addOffset, left: 0, bottom: 0, right: 0)
                     self.contentOffset = CGPoint.init(x: 0, y: -(height+self.originalNavHeight+addOffset))
 
-                }, completion: nil)
+//                }, completion: nil)
 
                 view.translatesAutoresizingMaskIntoConstraints = false
                 let left = NSLayoutConstraint.init(item: view, attribute: .left, relatedBy: .equal, toItem: superV, attribute: .left, multiplier: 1.0, constant: 0.0)
@@ -74,8 +77,7 @@ open class MMParallaxCollectionView: UICollectionView {
             }
         }
     }
-    
-    
+        
     public func showNavigationBar(isShow:Bool,animated:Bool) {
         
         if let bar = self.collectionVC?.navigationController?.navigationBar{
