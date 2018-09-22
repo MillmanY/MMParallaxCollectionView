@@ -35,17 +35,17 @@ extension UIViewController{
                 return vc
             }
         }
-            
         else if(vc.isKind(of:UITabBarController.classForCoder())){
-            if let svc = vc as? UITabBarController,let v = svc.viewControllers , v.count > 0{
-                return UIViewController.findBestViewController(svc.selectedViewController!)
-                
+            if let svc = vc as? UITabBarController,let v = svc.viewControllers , v.count > 0 {
+                if svc.selectedViewController != nil {
+                    return UIViewController.findBestViewController(svc.selectedViewController!)
+                } else {
+                    return vc
+                }
             } else{
                 return vc
             }
-        }
-            
-        else{
+        } else{
             return vc
         }
     }
