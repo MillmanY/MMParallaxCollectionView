@@ -32,8 +32,8 @@ class MMParallaxLayout: UICollectionViewFlowLayout {
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        var resetAttributes = super.layoutAttributesForElements(in: rect)!.flatMap({ (attribute) -> UICollectionViewLayoutAttributes? in
-            if attribute.representedElementKind == UICollectionElementKindSectionHeader {
+        var resetAttributes = super.layoutAttributesForElements(in: rect)!.compactMap({ (attribute) -> UICollectionViewLayoutAttributes? in
+            if attribute.representedElementKind == UICollectionView.elementKindSectionHeader {
                 if headerY[attribute.indexPath] == nil {
                     headerY[attribute.indexPath] = attribute.frame.origin.y
                 }
@@ -44,8 +44,8 @@ class MMParallaxLayout: UICollectionViewFlowLayout {
         })
         
     
-        let headerAttributes = headerY.enumerated().flatMap { (offset,element) -> UICollectionViewLayoutAttributes?  in
-            if let attribute = self.layoutAttributesForSupplementaryView(ofKind: UICollectionElementKindSectionHeader, at:element.key){
+        let headerAttributes = headerY.enumerated().compactMap { (offset,element) -> UICollectionViewLayoutAttributes?  in
+            if let attribute = self.layoutAttributesForSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, at:element.key){
                 let top = self.collectionView!.contentInset.top
                 
                 let isOffsetNegative = self.collectionView!.contentOffset.y+top < CGFloat(0.0)
@@ -70,7 +70,7 @@ class MMParallaxLayout: UICollectionViewFlowLayout {
     }
 
     private func rear(attribute:UICollectionViewLayoutAttributes,isOffsetNegative:Bool) -> MMHeaderLayoutAttributes {
-        let header = MMHeaderLayoutAttributes.init(forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, with: attribute.indexPath)
+        let header = MMHeaderLayoutAttributes.init(forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, with: attribute.indexPath)
         let attFrame = self.calculateAttFrame(att: attribute)
         header.zIndex = attribute.indexPath.section - headerY.count
         header.isHidden = (headerY[attribute.indexPath]!+attFrame.height < attFrame.origin.y)
@@ -80,7 +80,7 @@ class MMParallaxLayout: UICollectionViewFlowLayout {
     
     private func front(attribute:UICollectionViewLayoutAttributes,isOffsetNegative:Bool) -> MMHeaderLayoutAttributes {
         let attFrame = self.calculateAttFrame(att: attribute)
-        let header = MMHeaderLayoutAttributes.init(forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, with: attribute.indexPath)
+        let header = MMHeaderLayoutAttributes.init(forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, with: attribute.indexPath)
         header.zIndex = attribute.indexPath.section + 2
         header.isHidden = false
         header.frame = attFrame

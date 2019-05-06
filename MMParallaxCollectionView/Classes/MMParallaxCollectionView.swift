@@ -53,7 +53,7 @@ public func addParallax(view:UIView,height:CGFloat) {
                 view.layer.zPosition = -1
                 self.backgroundColor = UIColor.clear
                 superV.addSubview(view)
-                superV.sendSubview(toBack: view)
+                superV.sendSubviewToBack(view)
 //                self.topMargin = self.getCollectionMargin()
                 self.topMargin = 0.0
 
