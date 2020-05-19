@@ -21,15 +21,15 @@ public enum HeaderStyle {
  Public function
  **/
 open class MMParallaxCollectionView: UICollectionView {
-    fileprivate var topMargin:CGFloat = 0.0
-    fileprivate var collectionVC:UIViewController?
-    fileprivate var statusHeight = UIApplication.shared.statusBarFrame.height
-    fileprivate var originalNavHeight:CGFloat = 0.0
-    fileprivate var parallaxView:UIView?
-    fileprivate var parallaxLayout = MMParallaxLayout()
-    fileprivate var parallaxTopConstraint:NSLayoutConstraint?
+    var topMargin:CGFloat = 0.0
+    var collectionVC:UIViewController?
+    var statusHeight: CGFloat = 0.0
+    var originalNavHeight:CGFloat = 0.0
+    var parallaxView:UIView?
+    var parallaxLayout = MMParallaxLayout()
+    var parallaxTopConstraint:NSLayoutConstraint?
     
-    fileprivate var navHiddenRate:((_ rate:CGFloat)->Void)?
+    var navHiddenRate:((_ rate:CGFloat)->Void)?
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
@@ -180,7 +180,7 @@ extension MMParallaxCollectionView {
         }
     }
     
-    fileprivate func drawMaskWith(parallax:UIView,scrollView:UIScrollView,oldValue:CGPoint) {
+    public func drawMaskWith(parallax:UIView,scrollView:UIScrollView,oldValue:CGPoint) {
         let realOffsetY = scrollView.contentOffset.y+scrollView.contentInset.top
         let topHeight = self.statusHeight + self.originalNavHeight
         let constantAdd = (parallaxTopConstraint != nil) ? ( topHeight-parallaxTopConstraint!.constant) : 0
@@ -198,7 +198,7 @@ extension MMParallaxCollectionView {
         self.layer.mask = layer
     }
     
-    fileprivate func shiftNavigationWith(scrollView:UIScrollView,oldValue:CGPoint) {
+    public func shiftNavigationWith(scrollView:UIScrollView,oldValue:CGPoint) {
         if let bar = self.collectionVC?.navigationController?.navigationBar{
             let total = originalNavHeight + statusHeight - topMargin
 
@@ -216,7 +216,7 @@ extension MMParallaxCollectionView {
         }
     }
     
-    fileprivate func shiftParallax(scrollView:UIScrollView,oldValue:CGPoint) {
+    public func shiftParallax(scrollView:UIScrollView,oldValue:CGPoint) {
         
         if let bar = self.collectionVC?.navigationController?.navigationBar,
            let p = parallaxTopConstraint{
@@ -239,14 +239,14 @@ extension MMParallaxCollectionView {
         }
     }
     
-    fileprivate func isBarNeedHidden () -> Bool {
+    public func isBarNeedHidden () -> Bool {
         if let _ = collectionVC?.navigationController?.navigationBar {
             return self.contentOffset.y >= 20
         }
         return false
     }
     
-    fileprivate func getCollectionMargin () -> CGFloat {
+    public func getCollectionMargin () -> CGFloat {
         for c in self.superview!.constraints {
             if let _ = c.firstItem as? MMParallaxCollectionView , c.firstAttribute == . top {
                 return originalNavHeight + statusHeight + c.constant
@@ -255,7 +255,7 @@ extension MMParallaxCollectionView {
         return 0.0
     }
     
-    fileprivate func barItemAlpha(alpha:CGFloat) {
+    public func barItemAlpha(alpha:CGFloat) {
         if let rate = self.navHiddenRate {
             rate(alpha)
         }
