@@ -23,7 +23,7 @@ public enum HeaderStyle {
 open class MMParallaxCollectionView: UICollectionView {
     var topMargin:CGFloat = 0.0
     var collectionVC:UIViewController?
-    var statusHeight: CGFloat = 0.0
+    var statusHeight = UIApplication.shared.statusBarFrame.height
     var originalNavHeight:CGFloat = 0.0
     var parallaxView:UIView?
     var parallaxLayout = MMParallaxLayout()
@@ -57,7 +57,7 @@ public func addParallax(view:UIView,height:CGFloat) {
 //                self.topMargin = self.getCollectionMargin()
                 self.topMargin = 0.0
 
-                let addOffset = self.statusHeight - self.topMargin
+                let addOffset = self.topMargin
                 
                 
 //                UIView.animate(withDuration: 0.3, delay: 1.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 5.0, options: .curveEaseIn, animations: {
@@ -173,8 +173,8 @@ extension MMParallaxCollectionView {
                 self.originalNavHeight = 0
             }
             self.topMargin = self.getCollectionMargin()
-            self.contentInset = UIEdgeInsets.init(top: self.originalNavHeight + self.statusHeight-self.topMargin, left: 0, bottom: 0, right: 0)
-            let addOffset = self.statusHeight - self.topMargin
+            self.contentInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+            let addOffset = self.topMargin
             self.contentOffset = CGPoint.init(x: 0, y: -(self.originalNavHeight+addOffset))
 
         }
@@ -182,7 +182,7 @@ extension MMParallaxCollectionView {
     
     public func drawMaskWith(parallax:UIView,scrollView:UIScrollView,oldValue:CGPoint) {
         let realOffsetY = scrollView.contentOffset.y+scrollView.contentInset.top
-        let topHeight = self.statusHeight + self.originalNavHeight
+        let topHeight = self.originalNavHeight
         let constantAdd = (parallaxTopConstraint != nil) ? ( topHeight-parallaxTopConstraint!.constant) : 0
         let rect = CGRect.init(x: 0, y: 0, width: parallax.frame.width, height: parallax.frame.height-realOffsetY+constantAdd)
         
@@ -200,12 +200,12 @@ extension MMParallaxCollectionView {
     
     public func shiftNavigationWith(scrollView:UIScrollView,oldValue:CGPoint) {
         if let bar = self.collectionVC?.navigationController?.navigationBar{
-            let total = originalNavHeight + statusHeight - topMargin
+            let total = originalNavHeight - topMargin
 
             if self.contentOffset.y >= -total && self.contentOffset.y < 0 {
                 let value = abs(self.contentOffset.y)
                 bar.frame.origin.y = value - originalNavHeight + topMargin
-                let minY = (statusHeight-originalNavHeight)
+                let minY = (originalNavHeight)
                 let alphaPercent = (bar.frame.origin.y-minY)/originalNavHeight
                 self.barItemAlpha(alpha: alphaPercent)
             } else if self.contentOffset.y <= -total {
@@ -224,9 +224,9 @@ extension MMParallaxCollectionView {
             let shiftValue = oldValue.y-scrollView.contentOffset.y
             let willShiftY = p.constant+(shiftValue/2)
             let realOffsetY = scrollView.contentOffset.y+scrollView.contentInset.top
-            let total = (bar.isTranslucent) ? originalNavHeight + statusHeight : 0.0
+            let total = (bar.isTranslucent) ? originalNavHeight : 0.0
             
-            let translcentHeight:CGFloat = (bar.isTranslucent) ? 0 : -(originalNavHeight + statusHeight)
+            let translcentHeight:CGFloat = (bar.isTranslucent) ? 0 : -(originalNavHeight)
             if realOffsetY < 0 {
                 p.constant = total
             } else if willShiftY > topMargin+translcentHeight && willShiftY < total{
@@ -249,7 +249,7 @@ extension MMParallaxCollectionView {
     public func getCollectionMargin () -> CGFloat {
         for c in self.superview!.constraints {
             if let _ = c.firstItem as? MMParallaxCollectionView , c.firstAttribute == . top {
-                return originalNavHeight + statusHeight + c.constant
+                return originalNavHeight + c.constant
             }
         }
         return 0.0
